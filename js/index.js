@@ -119,6 +119,6 @@ function click() {
 }
 
 window.addEventListener( 'resize', resize );
-window.addEventListener( 'click', click );
+window.addEventListener( 'touchstart', click );
 
 init();
