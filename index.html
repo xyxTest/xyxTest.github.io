@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">	
 <title>徐雨祥的个人网站</title>
-
+<link rel="stylesheet" type="text/css" href="css/polaroid-gallery.css"/>
 <link rel="stylesheet" type="text/css" href="css/normalize.css" />
 <link rel="stylesheet" type="text/css" href="css/demo.css">
 <link rel="stylesheet" href="css/style.css">
@@ -48,17 +48,18 @@
 </style>
 </head>
 <body>
-<div id="cotent">
-	<div id="head"><span class="head_span" onclick="test()">head</span></div>
-	<div id="body"><span class="head_span">body</span></div>
-	<div id="bottom"><span class="head_span">bottom</span></div>
-</div>
+<div id="gallery" class="fullscreen"></div>
+
 <canvas id="c2"></canvas>
 <canvas id="c1"></canvas>
 
 
 <script src="js/index.js"></script>
+<script type="text/javascript" src="js/polaroid-gallery.js"></script>
 <script>
+	 window.onload = function () {
+	        new polaroidGallery("data/data.json");
+	    }
 	function test(){
 		alert("surprise!")
 	}
